@@ -39,4 +39,4 @@ for path,tracks in metadata.items():
     toBeConverted.append(path)
 
 for filename in toBeConverted:
-  os.system(f'{sys.path[0]}/mkvdts2ac3.sh {filename}')
+  os.system(f'{sys.path[0]}/mkvdts2ac3.sh -d "{filename}"')
