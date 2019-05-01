@@ -11,10 +11,10 @@ metadata = {}
 toBeConverted = []
 
 for filename in (nested + inRoot):
-    with open(filename, 'rb') as f:
-      meta = enzyme.MKV(f)
+  with open(filename, 'rb') as f:
+    meta = enzyme.MKV(f)
 
-      metadata[filename] = meta.audio_tracks
+    metadata[filename] = meta.audio_tracks
 
 ccuCodecs = ['A_AC3','A_AAC','A_FLAC','A_WAV','A_MP3']
 englishTerms = ['english','eng','en']
